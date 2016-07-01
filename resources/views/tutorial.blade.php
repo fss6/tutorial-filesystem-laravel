@@ -24,7 +24,7 @@
 					@forelse($files as $file)
 					<tr>
 						<td>
-							<a href="/files/{{$file}}/get" target="_blank">{{ $file }}</a>
+							<a href="/files/{{$file}}" target="_blank">{{ $file }}</a>
 						</td>
 						<td>
 							{{ Form::open(['route' => ['files.destroy', $file], 'method' => 'delete']) }}
